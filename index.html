@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Garrett的个人主页</title>
-    <link rel="stylesheet" href="./index.css">
+    <meta charset="UTF-8">
+    <title>招商</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .content{
+            height: 1938px;
+            min-width: 1000px;
+            margin-bottom: 120px;
+            background: url("https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/360_img.png");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .posi{
+            width: 958px;
+            height: 1938px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .step{
+            width: 390px;
+            height: 585px;
+            position: absolute;
+            top: 1149px;
+            left: 532px;
+            /*background: antiquewhite;*/
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        .step .tips{
+            position: absolute;
+            right: 0;
+            bottom: 10px;
+        }
+        .fix-bottom{
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            font-size: 0;
+        }
+        .fix-bottom img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <h1>hello?</h1>
+    <div class="content">
+        <div class="posi">
+            <div class="step">
+                <img class="step-content" src="https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/step.png">
+                <img class="tips" src="https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/scroll_tips.png">
+            </div>
+        </div>
+    </div>
+    <div class="fix-bottom">
+        <a href="http://ims.pinduoduo.com/?utm_term=corp&utm_source=erp&utm_medium=DUODD001&channel=DUODD001#!/zhaoshang" target="_blank">
+            <img src="https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/fix_bottom.png">
+        </a>
+    </div>
 </body>
 </html>
