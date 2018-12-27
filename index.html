@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>招商</title>
+    <script src="https://lepeen.com/js/jquery-2.2.0.min.js"></script>
     <style>
         *{
             margin: 0;
@@ -12,7 +13,7 @@
             height: 1938px;
             min-width: 1000px;
             /*margin-bottom: 120px;*/
-            margin-top: 104px;
+            /*margin-top: 104px;*/
             background: url("https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/360_img.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -65,4 +66,10 @@
         </a>
     </div>
 </body>
+<script>
+    $('.content').css({'margin-top': $('.fix-bottom').height()});
+    $(window).resize(function (e) {
+        $('.content').css({'margin-top': $('.fix-bottom').height()});
+    })
+</script>
 </html>
