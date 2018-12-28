@@ -12,8 +12,6 @@
         .content{
             height: 1938px;
             min-width: 1000px;
-            /*margin-bottom: 120px;*/
-            /*margin-top: 104px;*/
             background: url("https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/360_img.png");
             background-position: center;
             background-repeat: no-repeat;
@@ -21,7 +19,9 @@
         .posi{
             width: 958px;
             height: 1938px;
-            margin: 0 auto;
+            /*margin: 0 auto;*/
+            margin-left: auto;
+            margin-right: auto;
             position: relative;
         }
         .step{
@@ -30,7 +30,6 @@
             position: absolute;
             top: 1149px;
             left: 532px;
-            /*background: antiquewhite;*/
             overflow-y: scroll;
             overflow-x: hidden;
         }
@@ -45,6 +44,7 @@
             top: 0;
             left: 0;
             font-size: 0;
+            z-index: 999;
         }
         .fix-bottom img{
             width: 100%;
@@ -52,6 +52,11 @@
     </style>
 </head>
 <body>
+    <div class="fix-bottom">
+        <a href="http://ims.pinduoduo.com/?utm_term=corp&utm_source=erp&utm_medium=DUODD001&channel=DUODD001#!/zhaoshang" target="_blank">
+            <img src="https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/fix_bottom.png">
+        </a>
+    </div>
     <div class="content">
         <div class="posi">
             <div class="step">
@@ -60,16 +65,13 @@
             </div>
         </div>
     </div>
-    <div class="fix-bottom">
-        <a href="http://ims.pinduoduo.com/?utm_term=corp&utm_source=erp&utm_medium=DUODD001&channel=DUODD001#!/zhaoshang" target="_blank">
-            <img src="https://duoduo-pic.oss-cn-hangzhou.aliyuncs.com/fix_bottom.png">
-        </a>
-    </div>
 </body>
 <script>
-    $('.content').css({'margin-top': $('.fix-bottom').height()});
-    $(window).resize(function (e) {
+    $(document).ready(function () {
         $('.content').css({'margin-top': $('.fix-bottom').height()});
+        $(window).resize(function (e) {
+            $('.content').css({'margin-top': $('.fix-bottom').height()});
+        })
     })
 </script>
 </html>
