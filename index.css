@@ -1,10 +1,16 @@
-*{
-    margin: 0;
-    padding: 0;
+.wrapper {
+    display: flex;
+    flex-direction: column;
 }
-body{
-    background: #ccc;
+
+.strava {
+    display: inline-block;
+    margin: 0 auto 10px;
+    height: 661px;
+    overflow: hidden;
+    border-radius: 4px;
 }
-h1{
-    color: red;
+
+.strava:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,.05),0 1px 3px rgba(0,0,0,.1);
 }
